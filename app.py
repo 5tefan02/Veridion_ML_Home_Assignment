@@ -1,5 +1,6 @@
 import streamlit as st
 from parser import parse_query
+from filters import filter_companies
 
 st.title("Company Search")
 
@@ -10,4 +11,8 @@ if st.button("Search"):
         filters = parse_query(query)
         st.write("Filters found:")
         st.json(filters)
+
+        results = filter_companies(filters)
+        st.write(f"Found {len(results)} companies:")
+        st.json(results)
 
