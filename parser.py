@@ -46,7 +46,7 @@ Numeric operators dictionary:
 - "up to X" = X
 
 Extract the following fields:
-- country: string or null. The country the user wants companies from. Use the full country name in English (e.g. "Germany", "Romania"). If multiple countries are mentioned, pick the most specific one stated. If no country is mentioned, use null.
+- country: string or null. The ISO 3166-1 alpha-2 country code (e.g. "DE" for Germany, "RO" for Romania) for the country the user wants companies from. If multiple countries are mentioned, pick the most specific one stated. If no country is mentioned, use null.
 - industry: string or null. The industry or sector the user is targeting (e.g. "fintech", "automotive manufacturing", "healthcare"). Use the term as close to the user's wording as possible, normalized to lowercase. If not mentioned, use null.
 - min_employees: integer or null. The minimum number of employees required. Apply numeric operators above. If not mentioned, use null.
 - max_employees: integer or null. The maximum number of employees allowed. Apply numeric operators above. If not mentioned, use null.
