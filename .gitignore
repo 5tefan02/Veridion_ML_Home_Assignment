@@ -1,0 +1,4 @@
+.env
+__pycache__/
+business_models_cache.json
+company_embeddings_cache.json
